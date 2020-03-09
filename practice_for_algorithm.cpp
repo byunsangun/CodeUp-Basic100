@@ -1,17 +1,11 @@
 #include <stdio.h>
 
 int main(void){
-	int a;
-	int sum = 0;
-	scanf("%d", &a);
-	for(int i =0; i<a; i++){
-		if(sum < a){
-			sum = sum + i;
-			continue;
-		}
-		else{
-			printf("%d", i-1);
-			break;
+	int a,b;
+	scanf("%d %d", &a, &b);
+	for(int i =1; i<=a; i++){
+		for(int n = 1; n<=b; n++){
+			printf("%d %d\n", i, n);
 		}
 	}
 	
