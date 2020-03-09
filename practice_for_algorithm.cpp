@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main (void){
-	int a,b;
+	int a;
 	scanf("%d", &a);
-	reget: 
-	scanf("%d", &b);
-	printf("%d ", b);
-	if(a-- != 1) goto reget;
+	while(a != 0){
+		printf("%d\n", a);
+		scanf("%d", &a);
+	}
 	}
 
