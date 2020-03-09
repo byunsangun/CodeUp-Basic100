@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (void){
-	unsigned int a;
-	scanf("%u", &a);
-	printf("%u", a);
+	double a;
+	scanf("%lf", &a);
+	printf("%.11lf", a);
 }
