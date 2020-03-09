@@ -1,18 +1,21 @@
 #include <stdio.h>
 
 int main (void){
-	int a;
-	scanf("%d", &a);
-	if(a >= 90){
-		printf("A");
+	char a;
+	scanf("%c", &a);
+	if(a == 'A'){
+		printf("best!!!");
 	}
-	else if(a >= 70){
-		printf("B");
+	else if(a == 'B'){
+		printf("good!!");
 	}
-	else if(a >= 40){
-		printf("C");
+	else if(a == 'C'){
+		printf("run!");
 	}
-	else{
-		printf("D");
+	else if(a == 'D'){
+		printf("slowly~");
+	}
+	else {
+		printf("what?");
 	}
 }
