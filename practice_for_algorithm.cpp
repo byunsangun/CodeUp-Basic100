@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main (void){
-	int  a,b;
-	scanf("%d %d", &a, &b);
-	printf("%d %d", a, b);	
+	char  a,b;
+	scanf("%c %c", &a, &b);
+	printf("%c %c", b, a);	
 	return 0;  
 }
 
