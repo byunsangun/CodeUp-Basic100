@@ -5,12 +5,24 @@ int main (void){
 	scanf("%d %d %d", &a, &b, &c);
 	
 	if(a % 2 == 0){
-		printf("%d\n", a);
+		printf("even\n");
 	}
+	else{
+		printf("odd\n");
+	}
+	
 	if(b % 2 == 0){
-		printf("%d\n", b);
+		printf("even\n");
 	}
-	 if(c % 2 == 0){
-		printf("%d\n", c);
+	else{
+		printf("odd\n");
+	}	
+	
+	if(c % 2 == 0){
+		printf("even\n");
 	}
+	else{
+		printf("odd\n");
+	}	
+	
 }
