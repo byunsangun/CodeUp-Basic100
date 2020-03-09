@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main (void){
-	int year, month, day;
-	scanf("%d.%d.%d", &year, &month, &day);
-	printf("%04d.%02d.%02d", year, month, day);	
+	int first, last;
+	scanf("%d-%d", &first, &last);
+	printf("%06d%07d", first, last);	
 	return 0;  
 }
 
