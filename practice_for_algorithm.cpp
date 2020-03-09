@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main(void){
-	char a;
-	scanf("%c ", &a);
-	while(1){
-		if(a !='q'){
-		printf("%c\n",a);
-		scanf("%c ", &a);	
+	int a;
+	int sum = 0;
+	scanf("%d", &a);
+	for(int i =0; i<a; i++){
+		if(sum < a){
+			sum = sum + i;
+			continue;
 		}
 		else{
-			printf("q");
+			printf("%d", i-1);
 			break;
 		}
 	}
-	
 	
 }
