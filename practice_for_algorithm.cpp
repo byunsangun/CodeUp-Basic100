@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main (void){
-	printf("\"C:\\Download\\hello.cpp\"");
+	int n;
+	scanf("%d", &n);
+	printf("%d", n);	
 	return 0;  
 }
 
