@@ -2,9 +2,12 @@
 
 int main(void){
 	int a;
-	int b = 0;
+	int sum = 0;
 	scanf("%d", &a);
 	for(int i = 0; i<a+1; i++){
-		printf("%d ", b + i);
+		if(i % 2 == 0){
+			sum = 	sum + i;
+		}
 	}
+	printf("%d", sum);
 }
