@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (void){
-	int hour, minute, second;
-	scanf("%d:%d:%d", &hour, &minute, &second);
-	printf("%d", minute);
+	int year, month, day;
+	scanf("%d.%d.%d", &year, &month, &day);
+	printf("%02d-%02d-%04d", day, month, year);
 }
