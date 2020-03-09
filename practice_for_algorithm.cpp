@@ -5,7 +5,8 @@ int main (void){
 	scanf("%d", &a);
 	while(a != 0){
 		printf("%d\n", a);
-		scanf("%d", &a);
+	
+		a = a -1;
 	}
 	}
 
