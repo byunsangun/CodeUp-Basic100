@@ -3,17 +3,16 @@
 int main (void){
 	int a;
 	scanf("%d", &a);
-	if(a>0){
-		printf("plus\n");
+	if(a >= 90){
+		printf("A");
+	}
+	else if(a >= 70){
+		printf("B");
+	}
+	else if(a >= 40){
+		printf("C");
 	}
 	else{
-		printf("minus\n");
-	}
-	
-	if(a % 2 == 0){
-		printf("even\n");
-	}
-	else{
-		printf("odd\n");
+		printf("D");
 	}
 }
