@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int main(void){
-	char a;
-	char start = 'a';
-	scanf("%c", &a);
-	do{
-		printf("%c ", start);
-		start = start + 1;
+	int a;
+	int b = 0;
+	scanf("%d", &a);
+	for(int i = 0; i<a+1; i++){
+		printf("%d ", b + i);
 	}
-	while(start < a + 1);
 }
