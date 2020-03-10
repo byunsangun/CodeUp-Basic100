@@ -2,22 +2,19 @@
 #include <math.h>
 
 int main(void){
-	int a,c;
-	int result;
-	int b[10000];
-	scanf("%d", &a);
-	for(int i = 0; i<a; i++){
-		scanf("%d", &c);
-		b[i] = c;
+	int a[20][20]={};
+	int x,y;
+	int n;
+	scanf("%d", &n);
+	for(int i = 0; i<n; i++){
+		scanf("%d %d", &x, &y);
+		a[x][y] = 1;
 	}
-	result = b[0];
-	for(int i = 0; i<a; i++){
-		if(result >= b[i]){
-			result = b[i];
-		} else{
-			continue;
+	for(int z = 1; z<=19; z++){
+		for(int j = 1; j<=19; j++){
+			printf("%d ", a[z][j]);
 		}
+		printf("\n");
 	}
-	printf("%d", result);
 }
 
