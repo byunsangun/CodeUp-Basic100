@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main(void){
-	 int a;
-	scanf("%X", &a);
-	for(int i = 1; i<=a; i++){
-		if(i % 3 == 0){
-			printf("X ");
+	 int a,b,c;
+	scanf("%d %d %d", &a, &b, &c);
+	for(int i = 0; i<a; i++){
+		for(int l = 0; l <b; l++){
+			for(int n = 0; n<c; n++){
+				printf("%d %d %d\n", i, l, n);
+			}
 		}
-		else{
-		
-		printf("%d ",i);
-	}
 }
+printf("%d", a*b*c);
 	return 0;
 }
