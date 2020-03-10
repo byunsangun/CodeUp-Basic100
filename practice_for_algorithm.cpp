@@ -2,30 +2,45 @@
 #include <math.h>
 
 int main(void){
-	int h,w;
-	int l,d,x,y;
-	scanf("%d %d", &h, &w);
-	int arr[100][100] = {};
-	int n;
-	scanf("%d", &n);
-	for(int i = 1; i<=n; i++){
-		scanf("%d %d %d %d", &l, &d, &x, &y);
-			if(d == 0){
-				for(int j = x; j<=l+x-1; j++){
-					arr[x][j] = 1;
-				}
-			}
-			else{
-				for(int j = x; j<=l+x-1; j++){
-					arr[j][y] = 1;
-				}
-			}	
+	int arr[11][11];
+	int a;
+	for(int i=1; i<=10; i++){
+		for(int j=1; j<=10; j++){
+			scanf("%d", &arr[i][j]);
+		}
 	}
-	for(int i = 1; i<= h; i++){
-		for(int j = 1; j<= w; j++){
-			printf("%d ", arr[i][j]);
+	int x=2;
+	int y=2;
+	if(arr[x][y] == 2){
+		arr[x][y] = 9;
+	}
+	
+	while(arr[x][y] == 0){
+		arr[x][y] = 9;
+		if(arr[x][y+1] == 0){
+			y = y+1;
+		}
+		else if(arr[x][y+1] == 2){
+			arr[x][y+1] = 9;
+			break;
+		}
+		else if(arr[x+1][y] == 2){
+			arr[x+1][y] = 9;
+			break;
+		}
+		else{
+			x = x+1;
+		}		
+	}
+	
+	
+
+
+	for(int i = 1; i<=10; i++){
+		for(int j =1; j<= 10; j++){
+			printf("%d ",arr[i][j]);
 		}
 		printf("\n");
 	}
-	return 0;
+	
 }
