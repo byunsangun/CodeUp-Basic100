@@ -2,10 +2,12 @@
 #include <math.h>
 
 int main(void){
-	long long a,b,c,d;
-	scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
-	for(int i = 0; i<d-1; i++){
-		a = a * b + c;
+	long long a,b,c;
+	int day=1;
+	scanf("%lld %lld %lld", &a, &b, &c);
+	while(day%a != 0 || day%b != 0 || day%c != 0){
+		day++;
 	}
-	printf("%lld", a);
+	printf("%d", day);
 }
+
