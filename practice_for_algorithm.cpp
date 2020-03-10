@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main(void){
-	int a,b,c;
-	scanf("%d %d %d", &a, &b, &c);
-	printf("%.2f MB", (float)a*b*c/8/1024/1024);
-	
+	int a;
+	scanf("%d", &a);
+	for(int i=1; i<=a; i++){
+		if(i % 3 != 0){
+			printf("%d ", i);
+		}
+	}
 }
