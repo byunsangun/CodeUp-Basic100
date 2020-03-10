@@ -2,12 +2,15 @@
 #include <math.h>
 
 int main(void){
-	long long a,b,c;
-	int day=1;
-	scanf("%lld %lld %lld", &a, &b, &c);
-	while(day%a != 0 || day%b != 0 || day%c != 0){
-		day++;
+	int a,c;
+	int b[23]={};
+	scanf("%d", &a);
+	for(int i = 0; i<a; i++){
+		scanf("%d", &c);
+		b[c-1] = b[c-1] +1;
 	}
-	printf("%d", day);
+	for(int i = 0; i<23; i++){
+		printf("%d ", b[i]);
+	}
 }
 
