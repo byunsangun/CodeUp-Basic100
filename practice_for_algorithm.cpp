@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void){
-	int a,b,c;
-	scanf("%d %d %d", &a, &b, &c);
-	a = a + b * (c-1);
-	printf("%d", a);
+	long long a,b,c;
+	scanf("%lld %lld %lld", &a, &b, &c);
+	a = a * pow(b,c-1);
+	printf("%lld", a);
 }
