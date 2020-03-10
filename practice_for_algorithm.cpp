@@ -3,14 +3,14 @@
 
 int main(void){
 	int a,c;
-	int b[23]={};
+	int b[10000]={};
 	scanf("%d", &a);
-	for(int i = 0; i<a; i++){
+	for(int i = 1; i<=a; i++){
 		scanf("%d", &c);
-		b[c-1] = b[c-1] +1;
+		b[i] = c;
 	}
-	for(int i = 0; i<23; i++){
-		printf("%d ", b[i]);
+	for(int i = 1; i<=a; i++){
+		printf("%d ", b[a-i+1]);
 	}
 }
 
