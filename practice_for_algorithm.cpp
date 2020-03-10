@@ -2,42 +2,30 @@
 #include <math.h>
 
 int main(void){
-	int a[20][20]={};
+	int h,w;
+	int l,d,x,y;
+	scanf("%d %d", &h, &w);
+	int arr[100][100] = {};
 	int n;
-	
-	int x,y;
-	for(int i=1;i<=19;i++){
-	   for(int j=1;j<=19;j++){
-  		scanf("%d", &a[i][j]);
-   }
- }
- 	scanf("%d", &n);
- 	
-	for(int i = 0; i<n; i++){	
-		scanf("%d %d", &x, &y);
-	
-		for(int j = 1; j<=19; j++){
-			if(a[x][j] == 0){
-				a[x][j] = 1;
+	scanf("%d", &n);
+	for(int i = 1; i<=n; i++){
+		scanf("%d %d %d %d", &l, &d, &x, &y);
+			if(d == 0){
+				for(int j = x; j<=l+x-1; j++){
+					arr[x][j] = 1;
+				}
 			}
 			else{
-				a[x][j] = 0;
-			}
-		}
-		for(int j = 1; j<=19; j++){
-			if(a[j][y] == 0){
-				a[j][y] = 1;
-			}
-			else{
-				a[j][y] = 0;
-			}
-		}
-}
-	for(int i = 1; i<=19; i++){
-		for(int j = 1; j<=19; j++){
-			printf("%d ", a[i][j]);
+				for(int j = x; j<=l+x-1; j++){
+					arr[j][y] = 1;
+				}
+			}	
+	}
+	for(int i = 1; i<= h; i++){
+		for(int j = 1; j<= w; j++){
+			printf("%d ", arr[i][j]);
 		}
 		printf("\n");
 	}
-	}
-
+	return 0;
+}
